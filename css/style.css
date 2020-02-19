@@ -10,6 +10,10 @@
         font-family: "QuicksandRegular";
 }
 
+html, body{
+        height: 100%;
+}
+
 .context{
         width: 90%;
         max-width: 1280px;
@@ -72,7 +76,6 @@ banner{
         padding: 15px 4%;
         width: 60%;
         color: #302b28;
-        border-radius: 5px;
 }
 
 @media screen and (max-width: 500px){
@@ -96,29 +99,29 @@ banner{
 }
 
 
-.section_1{
-        padding: 50px 0 20px;
+.section-1{
+        padding: 50px 0 0;
 }
 
-.section_1 p{
+.section-1 p{
         width: 45%;
         margin-right: 5%;
         text-align: justify;
         font-size: 20px;
 }
 
-.section_1 p:last-of-type{
+.section-1 p:last-of-type{
         margin-right: 0;
 }
 
 @media screen and (max-width: 500px){
-        .section_1 p{
+        .section-1 p{
                 width: 95%;
                 margin: 20px 0;
         }
 }
 
-.icone-seta{
+.arrow-icon{
         display: block;
        margin: 0 auto;
        position: relative;
@@ -128,4 +131,89 @@ banner{
 .border-bottom{
         border-bottom: 1px solid  rgba(184, 163, 152, 0.671);
         padding: 30px;
+}
+
+.section-rooms{
+        padding: 70px 2%;
+        background-color: #b8a398;
+}
+
+.section-rooms h2{
+        color: #f8f6f5;
+        margin: 30px 0;
+        text-align: center;
+        font-size: 30px;
+        text-transform: uppercase;
+}
+
+room{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 300px;
+        border:1px solid  rgba(253, 252, 251, 0.671);
+}
+
+room:nth-of-type(2n + 1){
+        flex-direction: row-reverse;
+}
+
+@media screen and (max-width: 500px){
+        room:nth-of-type(1n+1){
+                flex-direction: column-reverse;
+                margin-bottom: 15px;
+                height: 400px;
+        }
+}
+
+
+.text-room{
+        width: 30%;
+        height: 100%;
+        padding: 3%;
+        background-color: #e7e5e4;
+}
+
+@media screen and (max-width: 500px){
+        .text-room{
+                width: 100%;
+                height: auto;
+        }
+}
+
+.text-room p{
+        text-align: justify;
+}
+
+.photo-room{
+        width: 70%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+}
+
+@media screen and (max-width: 500px){
+        .photo-room{
+                width:100%;
+        }
+}
+
+.living-room{
+        background-image: url(../images/sala.jpg);
+        
+}
+
+.kitchen{
+        background-image: url(../images/cozinha.jpg);
+        
+}
+
+.bedroom{
+        background-image: url(../images/quarto.jpg);
+        
+}
+
+.bathroom{
+        background-image: url(../images/banheiro.jpg);
+        
 }
