@@ -19,6 +19,7 @@
 .flex-row-between{
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
 }
 
 .main-header{
@@ -94,3 +95,37 @@ banner{
         }
 }
 
+
+.section_1{
+        padding: 50px 0 20px;
+}
+
+.section_1 p{
+        width: 45%;
+        margin-right: 5%;
+        text-align: justify;
+        font-size: 20px;
+}
+
+.section_1 p:last-of-type{
+        margin-right: 0;
+}
+
+@media screen and (max-width: 500px){
+        .section_1 p{
+                width: 95%;
+                margin: 20px 0;
+        }
+}
+
+.icone-seta{
+        display: block;
+       margin: 0 auto;
+       position: relative;
+       top: 60px;
+}
+
+.border-bottom{
+        border-bottom: 1px solid  rgba(184, 163, 152, 0.671);
+        padding: 30px;
+}
