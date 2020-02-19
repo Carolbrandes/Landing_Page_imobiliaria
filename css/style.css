@@ -1,3 +1,4 @@
+/* --------GERAL---------- */
 @font-face{
         src: url(../fonts/static/Quicksand-Regular.ttf);
         font-family: "QuicksandRegular";
@@ -32,6 +33,42 @@ html, body{
         align-items: center;
 }
 
+.flex-row-center{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 500px;
+}
+
+@media screen and (max-width: 500px){
+        .flex-row-center{
+               height: 400px;
+        }
+}
+
+.title-primary{
+        color: #f8f6f5;
+        margin: 30px 0;
+        text-align: center;
+        font-size: 30px;
+        text-transform: uppercase;
+}
+
+.botao-enviar{
+        background-image: linear-gradient(#eceae8, #c4c1c1);
+        width: 30%;
+        min-width: 100px;
+        height: 40px;
+        padding: 10px 2%;
+        cursor: pointer;
+        border: none;
+        font-size: 18px;
+
+}
+
+
+
+/* --------HEADER--------- */
 .main-header{
         background-color: #b8a398;
         padding: 15px 2%;
@@ -42,6 +79,9 @@ html, body{
         max-width: 160px;
 }
 
+
+
+/* --------BANNER---------- */
 banner{
         display: block;
         padding: 20px 5%;
@@ -76,7 +116,6 @@ banner{
      
 }
 
-
 .banner-h1{
         background-color: rgba(184, 163, 152, 0.671);
         padding: 15px 4%;
@@ -91,20 +130,9 @@ banner{
         }
 }
 
-.flex-row-center{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 500px;
-}
-
-@media screen and (max-width: 500px){
-        .flex-row-center{
-               height: 400px;
-        }
-}
 
 
+/* --------SECTION 01---------- */
 .section-1{
         padding: 50px 0 0;
 }
@@ -139,18 +167,13 @@ banner{
         padding: 30px;
 }
 
+
+/* --------SECTION ROOMS --------- */
 .section-rooms{
         padding: 70px 2%;
         background-color: #b8a398;
 }
 
-.title-primary{
-        color: #f8f6f5;
-        margin: 30px 0;
-        text-align: center;
-        font-size: 30px;
-        text-transform: uppercase;
-}
 
 room{
         display: flex;
@@ -171,7 +194,6 @@ room:nth-of-type(2n + 1){
                 height: 400px;
         }
 }
-
 
 .text-room{
         width: 30%;
@@ -224,6 +246,8 @@ room:nth-of-type(2n + 1){
         
 }
 
+
+/* --------FOOTER --------- */
 footer{
         background-color: #887870;
         padding: 40px 2%;
@@ -269,17 +293,7 @@ textarea{
         padding: 2px 2%;
 }
 
-.botao-enviar{
-        background-image: linear-gradient(#eceae8, #c4c1c1);
-        width: 30%;
-        min-width: 100px;
-        height: 40px;
-        padding: 10px 2%;
-        cursor: pointer;
-        border: none;
-        font-size: 18px;
 
-}
 
 
 
